@@ -25,7 +25,7 @@ if api_key:
     if st.sidebar.button("Search Player"):
         with st.spinner("Searching..."):
             res = requests.get(
-                "https://v3.football.api-sports.io/players",
+                "https://v3.football.api-sports.io/players/profiles",
                 headers=headers,
                 params={"search": search_query}
             )
